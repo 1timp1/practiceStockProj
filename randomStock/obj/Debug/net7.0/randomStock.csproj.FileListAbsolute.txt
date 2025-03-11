@@ -1,0 +1,15 @@
+/Users/tim/Projects/randomStock/randomStock/bin/Debug/net7.0/randomStock
+/Users/tim/Projects/randomStock/randomStock/bin/Debug/net7.0/randomStock.deps.json
+/Users/tim/Projects/randomStock/randomStock/bin/Debug/net7.0/randomStock.runtimeconfig.json
+/Users/tim/Projects/randomStock/randomStock/bin/Debug/net7.0/randomStock.dll
+/Users/tim/Projects/randomStock/randomStock/bin/Debug/net7.0/randomStock.pdb
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.csproj.AssemblyReference.cache
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.AssemblyInfoInputs.cache
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.AssemblyInfo.cs
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.csproj.CoreCompileInputs.cache
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.dll
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/refint/randomStock.dll
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.pdb
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/randomStock.genruntimeconfig.cache
+/Users/tim/Projects/randomStock/randomStock/obj/Debug/net7.0/ref/randomStock.dll
