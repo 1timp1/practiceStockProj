@@ -5,32 +5,71 @@
         static void Main(string[] args)
         {
 
-
             int size = 10;
             int startPrice = 100;
             int step;
+            int head = -1;
+            int tail = -1;
+            InitialiseQueue(ref head, ref tail);
             double[] prices = new double[size];
-            int current = 1;
+            
             prices[0] = startPrice;
-            while (current < size)
+            string userInput;
+            Console.WriteLine("run ? ");
+            userInput = Console.ReadLine();
+            while (userInput == "")
             {
-                prices[current] = genPrice(prices[current - 1]);
-                current += 1;
-            }
-            for (int i = 0; i < size; i++)
-            {
-                if (i == size - 1)
+                if (tail == size)
                 {
-                    Console.WriteLine(prices[i]);
+                    Console.WriteLine("queue is full");
+                    for (int i = 1; i < size; i++)
+                    {
+                        if (i != size - 1)
+                        {
+                            prices[i - 1] = prices[i];
+                        }
+                        else
+                        {
+                            prices[i - 1] = prices[i];
+                            prices[i] = genPrice(prices[i - 1]);
+                        }
+                        
+                    }
                 }
                 else
                 {
-                    Console.Write(prices[i] + ", ");
+                    while (tail < size)
+                    {
+                        prices[tail] = genPrice(prices[tail - 1]);
+                        tail++;
+
+                    }
                 }
+                for (int i = 0; i < size; i++)
+                {
+                    if (i == size - 1)
+                    {
+                        Console.WriteLine(prices[i]);
+                    }
+                    else
+                    {
+                        Console.Write(prices[i] + ", ");
+                    }
+                }
+                drawChart(size, startPrice, prices);
+                Console.WriteLine(tail);
+                Console.WriteLine("run ? ");
+                userInput = Console.ReadLine();
             }
-            drawChart(size, startPrice, prices);
 
             Console.ReadLine();
+        }
+
+        static void InitialiseQueue(ref int head,ref int tail)
+        {
+            tail = 1;
+            head = 0;
+
         }
 
         static void drawChart(int size, int startPrice, double[] prices)
@@ -61,7 +100,7 @@
                         bool printIT = CheckCell(i, j, plots);
                         if (printIT == true)
                         {
-                            Console.Write("t ");
+                            Console.Write("* ");
                         }
                         else
                         {
